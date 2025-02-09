@@ -5,9 +5,15 @@ pluginManagement {
             name = 'MinecraftForge'
             url = 'https://maven.minecraftforge.net/'
         }
+        maven { url = 'https://maven.parchmentmc.org' } // Add this line
     }
 }
 
 plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
+//    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+
 }
+//minecraft {
+//    mappings channel: 'parchment', version: '2023.09.03-1.20.1'
+//}
